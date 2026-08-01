@@ -15,7 +15,7 @@ export default function Projects() {
           description="A quick look at the kind of work we do — websites, dashboards and stores designed to actually move the needle for the business behind them."
         />
 
-        <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
+        {/* <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
           {projects.map((project, i) => (
             <div
               key={project.title}
@@ -49,7 +49,7 @@ export default function Projects() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="mt-12 flex justify-center" data-aos="fade-up">
           <a href="#top" className="btn-secondary">

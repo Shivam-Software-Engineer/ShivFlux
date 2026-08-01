@@ -15,7 +15,7 @@ export default function Testimonials() {
           align="center"
         />
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+        {/* <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <div
               key={i}
@@ -41,7 +41,7 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </Container>
     </section>
   );
