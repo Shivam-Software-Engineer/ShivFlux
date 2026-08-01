@@ -1,0 +1,75 @@
+@import "aos/dist/aos.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-ink font-body antialiased;
+}
+
+::selection {
+  @apply bg-flux-200 text-flux-900;
+}
+
+/* thin, on-brand scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-flux-25;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-flux-300 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-flux-400;
+}
+
+@layer components {
+  /* Frosted glass panel used by the navbar (desktop) and mobile menu */
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-xl backdrop-saturate-150 border border-white/60;
+  }
+
+  /* Reusable pixel-dot motif lifted from the logo mark */
+  .pixel-dots {
+    background-image: radial-gradient(currentColor 1.5px, transparent 1.5px);
+    background-size: 14px 14px;
+  }
+
+  .section-pad {
+    @apply px-6 sm:px-10 lg:px-16 xl:px-24;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-flux-600 px-6 py-3.5
+      text-sm font-semibold text-white shadow-card transition-all duration-300
+      hover:bg-flux-700 hover:shadow-card-hover hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-flux-200
+      bg-white px-6 py-3.5 text-sm font-semibold text-ink transition-all duration-300
+      hover:border-flux-400 hover:bg-flux-25 hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-flux-200 bg-flux-25
+      px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-flux-700;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
