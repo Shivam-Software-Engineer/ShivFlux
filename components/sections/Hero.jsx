@@ -108,7 +108,7 @@ export default function Hero() {
           </div>
 
           {/* floating badge */}
-          <div className="absolute -left-6 bottom-6 hidden rounded-2xl border border-flux-100 bg-white px-4 py-3 shadow-card sm:flex sm:items-center sm:gap-3">
+          <div className="absolute left-4 bottom-[-80px] hidden sm:flex items-center gap-3 rounded-2xl border border-flux-100 bg-white px-4 py-3 shadow-card">
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-flux-600 text-white">
               <TrendingUp className="h-4 w-4" />
             </span>
