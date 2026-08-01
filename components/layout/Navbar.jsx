@@ -48,16 +48,16 @@ export default function Navbar() {
           }`}
         >
           {/* Logo lockup: SVG mark + PNG-safe text, per brand */}
-          <a href="#top" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
+          <a href="#top" className="flex items-center " onClick={() => setOpen(false)}>
             <Image
               src="/logo.svg"
               alt={`${site.shortName} logo mark`}
               width={38}
               height={38}
               priority
-              className="h-9 w-9"
+              className="h-9 w-9 "
             />
-            <span className="font-display text-xl font-extrabold tracking-tight text-ink">
+            <span className="font-display text-xl  font-extrabold tracking-tight text-ink">
               Shiv<span className="text-flux-600">Flux</span>
             </span>
           </a>
